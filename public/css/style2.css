@@ -115,25 +115,33 @@
   section > div.contents > div.box1,
   section > div.contents > div.box2,
   section > div.contents > div.box3{
-    margin-left: 45px;
+    margin-left: 150px;
     margin-top: 50px;
 
     width: 200px;
     height: 150px;
     border-radius: 15px 0px 0px 15px;
 
-    background-color: pink;
+    background-color: black;
+  }
+  section > div.contents > div.box1 >  div.box-Title{
+
+    color: white;
+  }
+
+  section > div.contents > div.box1 > div.box-right> div.box-Title{
+    color: white;
   }
   section > div.contents > div.box1 > div.box-right,
   section > div.contents > div.box2 > div.box-right,
   section > div.contents > div.box3> div.box-right{
     margin-left: 200px;
-
+    margin-top: -22px;
     width: 200px;
     height: 150px;
     border-radius: 0px 15px 15px 0px;
 
-    background-color: rgb(162, 239, 99);
+    background-color: blue;
   }
 
   
