@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url(/public/fonts/SCDream3.otf);
+  }
+  
+  @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+
+
+   html{
+    height: 100%;
+  }
+  body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #2D5FC0;
+  }
+  header{
+    position: relative;
+    width: 1080px;
+    height: 80px;
+
+  }
+  section.main{
+    position: relative;
+    width: 1080px;
+    height: 640px;
+  }
+
+
+  header > div.title,
+  header > div.user{
+    position: absolute;
+    height: 36px;
+    top:22px;
+    left: 30px;
+
+    font-family: "S-Core Dream";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    color: white;
+  }
+  header >div.title > span{
+    font-weight: 300;
+  }
+  header > img{
+    position: relative;
+    top:15px;
+    left: 285px;
+  }
+  header > div.user{
+    top: 25px;
+    left: 946px;
+    font-size: 25px;
+    color: white;
+  }
+  header > div.user > span{
+    font-weight: 200;
+  }
+  section > div.menu{
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  width: 250px;
+  height: 640px;
+  padding-top: 32px;
+  z-index: 1;
+}
+
+  section > div.menu > div.menu-item{
+    
+    width: 250px;
+    height: 69px;
+    margin-bottom: 8px;
+  }
+  section > div.menu > div.menu-item > a.inner{
+    box-sizing: border-box;
+    display: block;
+  
+    text-decoration: none;
+    
+    width: 235px;
+    height: 72px;
+    margin-left: 30px;
+    padding: 20px 82px 23px 30px;
+  
+    font-family: 'S-Core Dream';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+  
+    border-radius: 30px 0px;
+  }
+  section > div.menu > div.menu-item >a.active{
+    font-weight: 600;
+    background: orange;
+  }
+
+  section > div.contents {
+    position: relative;
+    float: right;
+    border-radius: 30px 0px 0px 0px;
+    width: 830px;
+    height: 640px;
+    background: white;
+  }
+
+  section > div.contents > div.user-name{
+    margin-top: 50px;
+    margin-left: 50px;
+
+    font-family: 'S-Core Dream';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+  }
+  section > div.contents > div.user-name > span{
+    font-weight: 200;
+  }
+  section > div.contents > div.email{
+    margin-top: 16px;
+    margin-left: 50px;
+    width: 329px;
+    height: 18px;
+    
+    font-family: "NanumBarunGothic";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+  section > div.contents > div.box-area{ 
+    margin-top: 45px;
+    margin-left: 58px;
+  }
+  section > div.contents > div.box-area > div.box{
+    float : left;
+    margin-right: 19px;
+    width: 228px;
+    height: 408px;
+    border-radius: 13px;
+
+    background: #ffcdcd;
+  }
+  section > div.contents > div.box-area > div.color1{
+  background: #f98080;
+}
+section > div.contents > div.box-area > div.color2{
+  background: #ef8fed;
+}
+
+section > div.contents > div.box-area > div.box > img{
+  margin-top: 88px;
+  margin-left: 64px;
+}
+.red{
+  margin-top: 46px;
+  margin-left: 191px;
+  margin-bottom: -51px;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: red;
+}
+section > div.contents > div.box-area > div.box > div.box-title{
+  margin-top: 51px;
+  margin-left: 21px;
+
+  font-family: "S-Core Dream";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+section > div.contents > div.box-area > div.box > div.box-contents{
+  margin-left: 21px;
+  margin-top: 13px;
+  height: 49px;
+
+  font-family: "NanumBarunGothic";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+section > div.contents > div.box-area > div.box > div.box-alim{
+  margin-left: 22px;
+  margin-top: 7px;
+  width: 108px;
+  height: 29px;
+  border-radius: 13px;
+  background: white;
+
+  font-family: "S-Core Dream";
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+ 
+}
+section > div.contents > div.box-area > div.box > div.box-alim > span{
+  color: red;
+}
