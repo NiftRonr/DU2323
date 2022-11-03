@@ -159,18 +159,24 @@
 
   }
   section > div.contents > div.box-area > div.box > div.dinner{
-  margin-left: 70px;
+    height: 60px;
+    width: 60px;
+    margin-left: 55px;
+    
+    border: 1px solid #2D5FC0;
+    border-radius: 60px;
 
+    text-align: center; 
     font-family: 'S-Core Dream';
     font-style: normal;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 60px;
     font-size: 15px;
-
     color: #2d5fc0;
   }
+
   section > div.contents > div.box-area > div.box > img{
-    margin-top: 50px;
+    margin-top: 10px;
   }
   section > div.contents > div.box-area > div.box > div.explain{
     margin-top: 30px;
