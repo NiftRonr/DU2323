@@ -111,6 +111,9 @@
     width: 830px;
     height: 640px;
     background: white;
+
+    font-family: 'S-Core Dream';
+    font-style: normal;
   }
 
   section > div.contents > div.user-name{

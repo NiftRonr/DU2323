@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/public/css/style2.css" rel="stylesheet" />
+    <link href="/public/css/restaurant.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -41,7 +41,7 @@
     </div>    
     <div class="contents">
       <div class="Date-box">
-        <div class ="Date">2021.04.16 (금)</div>
+        <div class ="Date" id="first-date-var">2021.04.16 (금)</div>
         <div class="triangle"></div>
       </div>
       <div class="box-area">
@@ -93,8 +93,7 @@
           </div>
           <a class="Check">
             원산지 확인하기
-          </a>
-          
+          </a>        
         </div>
       </div>
       <div class="Select-date">
@@ -105,7 +104,21 @@
         <div class ="s-date2">2021.04.14 (수)</div>
         <div class="triangle2"></div>
       </div>
+      <div class="Select-date2">
+        <div class ="s-date2">2021.04.13 (화)</div>
+        <div class="triangle2"></div>
+      </div>
+
     </div>
   </section>
+  <script>
+    const f_date_bar = document.getElementById('first-date-var');
+    f_date_bar.onclick = function() {     
+      f_date_bar.style.color = 'red';
+    }
+    console.log( f_date_bar);
+    
+  </script>
 </body>
+
 </html>
