@@ -113,8 +113,12 @@
   </section>
   <script>
     const f_date_bar = document.getElementById('first-date-var');
-    f_date_bar.onclick = function() {     
-      f_date_bar.style.color = 'red';
+    f_date_bar.onclick = function() {   
+      const name = prompt("이름을 입력해주세요");
+      document.write("<h1> "+name+"추가되었습니다</h1>");  
+      
+      console.log(name);
+      console.log(name+"추가되었습니다");
     }
     console.log( f_date_bar);
     
