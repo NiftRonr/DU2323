@@ -126,8 +126,12 @@
     font-size: 24px;
     color: black;
 
-    cursor: pointer;
   }
+
+  #name{
+    cursor: pointer;
+  } 
+
   section > div.contents > div.user-name > span{
     font-weight: 200;
   }
