@@ -134,6 +134,9 @@
   #id{
     cursor: pointer;
   } 
+  #email{
+    cursor: pointer;
+  } 
 
   section > div.contents > div.user-name > span{
     font-weight: 200;

@@ -16,6 +16,6 @@
     "url": "https://github.com/NiftRonr/DU2323/issues"
   },
   "homepage": "https://github.com/NiftRonr/DU2323#readme",
-  "rules" : "max-len"
+  "rules" : "max-lenght"
   
 }

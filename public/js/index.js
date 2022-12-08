@@ -19,21 +19,53 @@ userNameElement.onclick = () => {
   setUserNameInnerHtml(userName);
 };
 
-const userIdEmailElement = document.querySelector('#id');
-const localUserIdEmail = localStorage.getItem('email');
+const userIdElement = document.querySelector('#id');
+const localUserId = localStorage.getItem('email');
 
-const setUserIdEmailInnserHtml = (idEmail) =>{
-  userIdEmailElement.innerHTML = `${idEmail}`;
-  localUserIdEmail.textContent = idEmail;
+const setUserIdEmailInnserHtml = (Id) =>{
+  userIdElement.innerHTML = `${Id}`;
+  localUserId.textContent = Id;
 };
 
-if (localUserIdEmail) {
-  setUserIdEmailInnserHtml(localUserIdEmail);
+if (localUserId) {
+  setUserIdEmailInnserHtml(localUserId);
 }
 
-userIdEmailElement.onclick = () => {
-  const userIdEmail = prompt('학번과 이메일을 입력하세요. (/로 나누어 입력)');
-  localStorage.setItem('userIdEmail', userIdEmail);
+userIdElement.onclick = () => {
+  const userId = prompt('학번을 입력하시오.');
 
-  setUserIdEmailInnserHtml(userIdEmail);
+  const regExp = /^[0-9]*$/;
+
+  if (!regExp.test(userId)) {
+    confirm('숫자만 입력 가능합니다. 다시 입력해주세요.');
+  } else {
+    localStorage.setItem('userId', userId);
+    setUserIdEmailInnserHtml(userId);
+  }
+};
+
+const userEmailElement = document.querySelector('#email');
+const localUserEmail = localStorage.getItem('email');
+
+const setUserEmailInnserHtml = (email) =>{
+  userEmailElement.innerHTML = `${email}`;
+  localUserEmail.textContent = email;
+};
+
+if (localUserEmail) {
+  setUserEmailInnserHtml(localUserEmail);
+}
+
+userEmailElement.onclick = () => {
+  const userEmail = prompt('이메일을 입력하시오.');
+
+  const regExp =
+  /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+
+  if (!regExp.test(userEmail)) {
+    confirm('이메일 형식이 아닙니다. 다시 입력해주세요.');
+  } else {
+    localStorage.setItem('userEmail', userEmail);
+    setUserEmailInnserHtml(userEmail);
+  }
 };
