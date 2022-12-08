@@ -19,4 +19,21 @@ userNameElement.onclick = () => {
   setUserNameInnerHtml(userName);
 };
 
+const userIdEmailElement = document.querySelector('#id');
+const localUserIdEmail = localStorage.getItem('email');
 
+const setUserIdEmailInnserHtml = (idEmail) =>{
+  userIdEmailElement.innerHTML = `${idEmail}`;
+  localUserIdEmail.textContent = idEmail;
+};
+
+if (localUserIdEmail) {
+  setUserIdEmailInnserHtml(localUserIdEmail);
+}
+
+userIdEmailElement.onclick = () => {
+  const userIdEmail = prompt('학번과 이메일을 입력하세요. (/로 나누어 입력)');
+  localStorage.setItem('userIdEmail', userIdEmail);
+
+  setUserIdEmailInnserHtml(userIdEmail);
+};
