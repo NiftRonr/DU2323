@@ -38,11 +38,11 @@ userIdElement.onclick = () => {
   const nullCheck ='';
 
   if (!regExp.test(userId)) {
-    confirm('숫자만 입력 가능합니다. 다시 입력해주세요.');
+    alert('숫자만 입력 가능합니다. 다시 입력해주세요.');
   } else if (userId == nullCheck) {
-    confirm('학번을 입력하세여.');
+    alert('학번을 입력하세여.');
   } else if (userId.length !==9 ) {
-    confirm('학번은 9자입니다.');
+    alert('학번은 9자입니다.');
   } else {
     localStorage.setItem('userId', userId);
     setUserIdEmailInnserHtml(userId);
@@ -68,7 +68,7 @@ userEmailElement.onclick = () => {
   /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 
   if (!regExp.test(userEmail)) {
-    confirm('이메일 형식이 아닙니다. 다시 입력해주세요.');
+    alert('이메일 형식이 아닙니다. 다시 입력해주세요.');
   } else {
     localStorage.setItem('userEmail', userEmail);
     setUserEmailInnserHtml(userEmail);
