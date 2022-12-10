@@ -34,11 +34,13 @@ if (localUserId) {
 
 userIdElement.onclick = () => {
   const userId = prompt('학번을 입력하시오.');
-
   const regExp = /^[0-9]*$/;
+  const nullCheck ='';
 
   if (!regExp.test(userId)) {
     confirm('숫자만 입력 가능합니다. 다시 입력해주세요.');
+  } else if (userId == nullCheck) {
+    confirm('숫자를 입력하세여.');
   } else {
     localStorage.setItem('userId', userId);
     setUserIdEmailInnserHtml(userId);
