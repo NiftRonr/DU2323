@@ -16,6 +16,9 @@
     "url": "https://github.com/NiftRonr/DU2323/issues"
   },
   "homepage": "https://github.com/NiftRonr/DU2323#readme",
-  "rules" : "max-lenght"
-  
+  "rules": "max-len",
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-plugin-react": "^7.31.11"
+  }
 }
