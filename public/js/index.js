@@ -1,6 +1,6 @@
+// 이름변경
 const headerUserNameElement = document.querySelector('.user');
 const userNameElement = document.querySelector('#name');
-
 const localUserName = localStorage.getItem('userName');
 
 const setUserNameInnerHtml = (name) => {
@@ -19,6 +19,7 @@ userNameElement.onclick = () => {
   setUserNameInnerHtml(userName);
 };
 
+// 학번 변수 시작
 const userIdElement = document.querySelector('#id');
 const localUserId = localStorage.getItem('email');
 
@@ -43,7 +44,7 @@ userIdElement.onclick = () => {
     setUserIdEmailInnserHtml(userId);
   }
 };
-
+// email 변수 시작
 const userEmailElement = document.querySelector('#email');
 const localUserEmail = localStorage.getItem('email');
 
