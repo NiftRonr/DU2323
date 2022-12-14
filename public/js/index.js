@@ -21,7 +21,7 @@ userNameElement.onclick = () => {
 
 // 학번 변수 시작
 const userIdElement = document.querySelector('#id-num');
-const localUserId = localStorage.getItem('information');
+const localUserId = localStorage.getItem('userId');
 
 const setUserIdEmailInnserHtml = (Id) =>{
   userIdElement.innerHTML = `${Id}`;
@@ -50,7 +50,7 @@ userIdElement.onclick = () => {
 };
 // email 변수 시작
 const userEmailElement = document.querySelector('#email');
-const localUserEmail = localStorage.getItem('information');
+const localUserEmail = localStorage.getItem('userEmail');
 
 const setUserEmailInnserHtml = (email) =>{
   userEmailElement.innerHTML = `${email}`;
